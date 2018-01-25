@@ -1,6 +1,6 @@
 ######Steps to consider before running this#####
 
-# create data directory
+# create data directory and put '_input.yml' file in it (e.g. 'lrrk2_input.yml' down below)
 # download organism specific annotation from gencode
 # in the genome sequence index give the file name delibrately (e.g.'mm9_ERCC.index' down below)
 
