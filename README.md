@@ -14,3 +14,6 @@ Two versions of Taiji pipeline are installed on both GRAID and GRAID2 server. Th
 * Example config and input files in current_version folder
 * cisBP motif database files in current_version folder
 * Script to create input.yml file from ESB manifest table
+
+### Reference
+* Zhang, K., Wang, M., Zhao, Y., & Wang, W. (2019). Taiji: System-level identification of key transcription factors reveals transcriptional waves in mouse embryonic development. Science advances, 5(3), eaav3262.
