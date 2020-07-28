@@ -1,7 +1,12 @@
 ## PageRank analysis using Taiji pipeline  
 
-Two versions of Taiji pipeline are installed on both GRAID and GRAID2 server. Their command line names are taiji and taiji_new respectively. 
+Two versions of Taiji pipeline are installed on both GRAID and GRAID2 server. Their command line names are taiji and taiji_new respectively.  
 
+The command to run Taiji is:
+```
+taiji run --config config.yml
+taiji_new run --config config.yml
+```
 
 ### taiji (version 0.2.0)
 * Uses bam files for ATAC and rpkm tables for RNA as input
