@@ -1,0 +1,16 @@
+## PageRank analysis using Taiji pipeline  
+
+Two versions of Taiji pipeline are installed on both GRAID and GRAID2 server. Their command line names are taiji and taiji_new respectively. 
+
+
+### taiji (version 0.2.0)
+* Uses bam files for ATAC and rpkm tables for RNA as input
+* Example config and input files in older_version folder
+* cisBP motif database files in older_version folder
+* Script to create input.yml file from ESB manifest table
+
+### taiji_new (version 1.0.1)
+* Uses narrowPeaks files for ATAC and rpkm tables for RNA as input
+* Example config and input files in current_version folder
+* cisBP motif database files in current_version folder
+* Script to create input.yml file from ESB manifest table

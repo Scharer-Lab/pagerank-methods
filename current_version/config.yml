@@ -1,0 +1,38 @@
+################################################################################
+# The meaning of each field is explained at:
+# https://taiji-pipeline.github.io/documentation/options.html
+################################################################################
+
+################################################################################
+# Minimal settings
+################################################################################
+
+input: "input.yml"
+
+output_dir: "output/"
+
+#assembly: "mm10"
+
+################################################################################
+# Advanced settings
+################################################################################
+
+genome: "/Volumes/GRAID/seqTools/genomes/mm10/mm10.fa"
+
+annotation: "/Volumes/GRAID/seqTools/genomes/mm10/gencode.vM17.annotation.gtf"
+
+motif_file: "cisBP_mouse.meme"
+
+genome_index: "/Volumes/GRAID/seqTools/genomes/mm10/mm10.index"
+
+bwa_index: "/Volumes/GRAID/seqTools/genomes/mm10/mm10_BWAIndex/"
+
+#star_index: "/home/kai/genome/GRCh38/Sequence/STAR_index/"
+
+#rsem_index: "/home/kai/genome/GRCh38/Sequence/RSEM_index/"
+
+#callpeak_fdr: 0.01
+
+#callpeak_genome_size: "hs"
+
+#tss_enrichment_cutoff: 5

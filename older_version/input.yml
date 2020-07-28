@@ -1,0 +1,129 @@
+################################################################################
+# *Important*: Proper identation of the text is critical for parsing!
+# Lines starting with a '#' character are comments, for human reading only.
+# Further read about the YAML format: http://www.yaml.org/start.html.
+################################################################################
+
+
+# NOTE: Each experiment must have a *UNIQUE* ID.
+# Related experiments must share the same group name.
+# For example, you want to use "spleen" as the group name for
+# "spleen_ATAC_Seq", "spleen_RNA_Seq", etc.
+
+ATAC-Seq:
+  - id: Nav_IgM_ATAC
+    group: Nav_IgM
+    replicates:
+      - rep: 1
+        files:
+          - path: /Volumes/GRAID/Memory.Bcell.ATAC/data/Nav_1/Nav_1.sort.dupMark.bam
+            tags: ["filtered"]
+      - rep: 2
+        files:
+          - path: /Volumes/GRAID/Memory.Bcell.ATAC/data/Nav_2/Nav_2.sort.dupMark.bam
+            tags: ["filtered"]
+      - rep: 3
+        files:
+          - path: /Volumes/GRAID/Memory.Bcell.ATAC/data/Nav_3/Nav_3.sort.dupMark.bam
+            tags: ["filtered"]
+
+  - id: Mem_IgM_ATAC
+    group: Mem_IgM
+    replicates:
+      - rep: 1
+        files:
+          - path: /Volumes/GRAID/Memory.Bcell.ATAC/data/Mem_IgM_1/Mem_IgM_1.sort.dupMark.bam
+            tags: ["filtered"]
+      - rep: 2
+        files:
+          - path: /Volumes/GRAID/Memory.Bcell.ATAC/data/Mem_IgM_2/Mem_IgM_2.sort.dupMark.bam
+            tags: ["filtered"]
+      - rep: 3
+        files:
+          - path: /Volumes/GRAID/Memory.Bcell.ATAC/data/Mem_IgM_3/Mem_IgM_3.sort.dupMark.bam
+            tags: ["filtered"]
+
+  - id: Mem_IgG_ATAC
+    group: Mem_IgG
+    replicates:
+      - rep: 1
+        files:
+          - path: /Volumes/GRAID/Memory.Bcell.ATAC/data/Mem_IgG_1/Mem_IgG_1.sort.dupMark.bam
+            tags: ["filtered"]
+      - rep: 2
+        files:
+          - path: /Volumes/GRAID/Memory.Bcell.ATAC/data/Mem_IgG_2/Mem_IgG_2.sort.dupMark.bam
+            tags: ["filtered"]
+
+RNA-Seq:
+  - id: Nav_IgM_RNA
+    group: Nav_IgM
+    replicates:
+      - rep: 1
+        files:
+          - path: /Volumes/GRAID/Memory.Bcell.ATAC/analysis/PageRank/rna/Nav_IgM_1.rpkm.tsv
+            tags: ["gene quantification"]
+      - rep: 2
+        files:
+          - path: /Volumes/GRAID/Memory.Bcell.ATAC/analysis/PageRank/rna/Nav_IgM_2.rpkm.tsv
+            tags: ["gene quantification"]
+      - rep: 3
+        files:
+          - path: /Volumes/GRAID/Memory.Bcell.ATAC/analysis/PageRank/rna/Nav_IgM_3.rpkm.tsv
+            tags: ["gene quantification"]
+
+  - id: Mem_IgM_RNA
+    group: Mem_IgM
+    replicates:
+      - rep: 1
+        files:
+          - path: /Volumes/GRAID/Memory.Bcell.ATAC/analysis/PageRank/rna/Mem_IgM_1.rpkm.tsv
+            tags: ["gene quantification"]
+      - rep: 2
+        files:
+          - path: /Volumes/GRAID/Memory.Bcell.ATAC/analysis/PageRank/rna/Mem_IgM_2.rpkm.tsv
+            tags: ["gene quantification"]
+      - rep: 3
+        files:
+          - path: /Volumes/GRAID/Memory.Bcell.ATAC/analysis/PageRank/rna/Mem_IgM_3.rpkm.tsv
+            tags: ["gene quantification"]
+
+  - id: Mem_IgG_RNA
+    group: Mem_IgG
+    replicates:
+      - rep: 1
+        files:
+          - path: /Volumes/GRAID/Memory.Bcell.ATAC/analysis/PageRank/rna/Mem_IgG_2.rpkm.tsv
+            tags: ["gene quantification"]
+      - rep: 2
+        files:
+          - path: /Volumes/GRAID/Memory.Bcell.ATAC/analysis/PageRank/rna/Mem_IgG_3.rpkm.tsv
+            tags: ["gene quantification"]
+
+#  - id: liver_RNA
+#    group: liver
+#    pairedEnd: true
+#    replicates:
+#      - rep:  1
+#        files:
+#          # pair-ended samples
+#          - pair:
+#            - path: RNA-Seq/liver-filename-replicate1-forward.fastq.gz
+#            - path: RNA-Seq/liver-filename-replicate1-reverse.fastq.gz
+
+#HiC:
+#  - id: liver_HiC
+#    group: liver
+#    replicates:
+#      - rep:  1
+#        files:
+          # Currently the pipeline do not analyze HiC data, so the user need to
+          # provide the end result - a list of loops, in following format:
+          # chrom_1 <TAB> start_1 <TAB> end_1 <TAB> chrom_2 <TAB> start_2 <TAB> end_2
+          # An example:
+          # chr21 <TAB> 29343 <TAB> 500000 <TAB> chr21 <TAB> 1009340 <TAB> 1023400
+#          - path: HiC/liver-loops.txt
+#            tags: ["loops"]
+
+# ChIP-seq will not be analyzed in beta release
+#ChIP-Seq: []

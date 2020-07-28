@@ -1,0 +1,361 @@
+################################################################################
+# *Important*: Proper identation of the text is critical for parsing!
+# Lines starting with a '#' character are comments, for human reading only.
+# Further read about the YAML format: http://www.yaml.org/start.html.
+################################################################################
+
+
+# NOTE: Each experiment must have a *UNIQUE* ID.
+# Related experiments must share the same group name.
+# For example, you want to use "spleen" as the group name for
+# "spleen_ATAC_Seq", "spleen_RNA_Seq", etc.
+
+ATAC-Seq:
+  - id: KO_DZ_ATAC
+    group: KO_DZ
+    replicates:
+      - rep: 1
+        files:
+          - path: /Volumes/GRAID/Collaborations/Tbet_KO_ATAC/data/ATAC_190211_10_T_bet_KO_DZ/ATAC_190211_10_T_bet_KO_DZ.MACS2.Peaks/ATAC_190211_10_T_bet_KO_DZ_peaks.narrowPeak
+            format: NarrowPeak
+      - rep: 2
+        files:
+          - path: /Volumes/GRAID/Collaborations/Tbet_KO_ATAC/data/ATAC_190211_10_T_bet_KO_LZ/ATAC_190211_10_T_bet_KO_LZ.MACS2.Peaks/ATAC_190211_10_T_bet_KO_LZ_peaks.narrowPeak
+            format: NarrowPeak
+      - rep: 3
+        files:
+          - path: /Volumes/GRAID/Collaborations/Tbet_KO_ATAC/data/ATAC_190211_10_WT_DZ/ATAC_190211_10_WT_DZ.MACS2.Peaks/ATAC_190211_10_WT_DZ_peaks.narrowPeak
+            format: NarrowPeak
+      - rep: 4
+        files:
+          - path: /Volumes/GRAID/Collaborations/Tbet_KO_ATAC/data/ATAC_190211_10_WT_LZ/ATAC_190211_10_WT_LZ.MACS2.Peaks/ATAC_190211_10_WT_LZ_peaks.narrowPeak
+            format: NarrowPeak
+      - rep: 5
+        files:
+          - path: /Volumes/GRAID/Collaborations/Tbet_KO_ATAC/data/ATAC_190211_12_T_bet_KO_DZ/ATAC_190211_12_T_bet_KO_DZ.MACS2.Peaks/ATAC_190211_12_T_bet_KO_DZ_peaks.narrowPeak
+            format: NarrowPeak
+      - rep: 6
+        files:
+          - path: /Volumes/GRAID/Collaborations/Tbet_KO_ATAC/data/ATAC_190211_12_T_bet_KO_LZ/ATAC_190211_12_T_bet_KO_LZ.MACS2.Peaks/ATAC_190211_12_T_bet_KO_LZ_peaks.narrowPeak
+            format: NarrowPeak
+      - rep: 7
+        files:
+          - path: /Volumes/GRAID/Collaborations/Tbet_KO_ATAC/data/ATAC_190211_12_WT_DZ/ATAC_190211_12_WT_DZ.MACS2.Peaks/ATAC_190211_12_WT_DZ_peaks.narrowPeak
+            format: NarrowPeak
+      - rep: 8
+        files:
+          - path: /Volumes/GRAID/Collaborations/Tbet_KO_ATAC/data/ATAC_190211_12_WT_LZ/ATAC_190211_12_WT_LZ.MACS2.Peaks/ATAC_190211_12_WT_LZ_peaks.narrowPeak
+            format: NarrowPeak
+      - rep: 9
+        files:
+          - path: /Volumes/GRAID/Collaborations/Tbet_KO_ATAC/data/ATAC_190211_15_T_bet_KO_DZ/ATAC_190211_15_T_bet_KO_DZ.MACS2.Peaks/ATAC_190211_15_T_bet_KO_DZ_peaks.narrowPeak
+            format: NarrowPeak
+
+  - id: KO_LZ_ATAC
+    group: KO_LZ
+    replicates:
+      - rep: 1
+        files:
+          - path: /Volumes/GRAID/Collaborations/Tbet_KO_ATAC/data/ATAC_190211_10_T_bet_KO_DZ/ATAC_190211_10_T_bet_KO_DZ.MACS2.Peaks/ATAC_190211_10_T_bet_KO_DZ_peaks.narrowPeak
+            format: NarrowPeak
+      - rep: 2
+        files:
+          - path: /Volumes/GRAID/Collaborations/Tbet_KO_ATAC/data/ATAC_190211_10_T_bet_KO_LZ/ATAC_190211_10_T_bet_KO_LZ.MACS2.Peaks/ATAC_190211_10_T_bet_KO_LZ_peaks.narrowPeak
+            format: NarrowPeak
+      - rep: 3
+        files:
+          - path: /Volumes/GRAID/Collaborations/Tbet_KO_ATAC/data/ATAC_190211_10_WT_DZ/ATAC_190211_10_WT_DZ.MACS2.Peaks/ATAC_190211_10_WT_DZ_peaks.narrowPeak
+            format: NarrowPeak
+      - rep: 4
+        files:
+          - path: /Volumes/GRAID/Collaborations/Tbet_KO_ATAC/data/ATAC_190211_10_WT_LZ/ATAC_190211_10_WT_LZ.MACS2.Peaks/ATAC_190211_10_WT_LZ_peaks.narrowPeak
+            format: NarrowPeak
+      - rep: 5
+        files:
+          - path: /Volumes/GRAID/Collaborations/Tbet_KO_ATAC/data/ATAC_190211_12_T_bet_KO_DZ/ATAC_190211_12_T_bet_KO_DZ.MACS2.Peaks/ATAC_190211_12_T_bet_KO_DZ_peaks.narrowPeak
+            format: NarrowPeak
+      - rep: 6
+        files:
+          - path: /Volumes/GRAID/Collaborations/Tbet_KO_ATAC/data/ATAC_190211_12_T_bet_KO_LZ/ATAC_190211_12_T_bet_KO_LZ.MACS2.Peaks/ATAC_190211_12_T_bet_KO_LZ_peaks.narrowPeak
+            format: NarrowPeak
+      - rep: 7
+        files:
+          - path: /Volumes/GRAID/Collaborations/Tbet_KO_ATAC/data/ATAC_190211_12_WT_DZ/ATAC_190211_12_WT_DZ.MACS2.Peaks/ATAC_190211_12_WT_DZ_peaks.narrowPeak
+            format: NarrowPeak
+      - rep: 8
+        files:
+          - path: /Volumes/GRAID/Collaborations/Tbet_KO_ATAC/data/ATAC_190211_12_WT_LZ/ATAC_190211_12_WT_LZ.MACS2.Peaks/ATAC_190211_12_WT_LZ_peaks.narrowPeak
+            format: NarrowPeak
+      - rep: 9
+        files:
+          - path: /Volumes/GRAID/Collaborations/Tbet_KO_ATAC/data/ATAC_190211_15_T_bet_KO_DZ/ATAC_190211_15_T_bet_KO_DZ.MACS2.Peaks/ATAC_190211_15_T_bet_KO_DZ_peaks.narrowPeak
+            format: NarrowPeak
+
+  - id: WT_DZ_ATAC
+    group: WT_DZ
+    replicates:
+      - rep: 1
+        files:
+          - path: /Volumes/GRAID/Collaborations/Tbet_KO_ATAC/data/ATAC_190211_10_T_bet_KO_DZ/ATAC_190211_10_T_bet_KO_DZ.MACS2.Peaks/ATAC_190211_10_T_bet_KO_DZ_peaks.narrowPeak
+            format: NarrowPeak
+      - rep: 2
+        files:
+          - path: /Volumes/GRAID/Collaborations/Tbet_KO_ATAC/data/ATAC_190211_10_T_bet_KO_LZ/ATAC_190211_10_T_bet_KO_LZ.MACS2.Peaks/ATAC_190211_10_T_bet_KO_LZ_peaks.narrowPeak
+            format: NarrowPeak
+      - rep: 3
+        files:
+          - path: /Volumes/GRAID/Collaborations/Tbet_KO_ATAC/data/ATAC_190211_10_WT_DZ/ATAC_190211_10_WT_DZ.MACS2.Peaks/ATAC_190211_10_WT_DZ_peaks.narrowPeak
+            format: NarrowPeak
+      - rep: 4
+        files:
+          - path: /Volumes/GRAID/Collaborations/Tbet_KO_ATAC/data/ATAC_190211_10_WT_LZ/ATAC_190211_10_WT_LZ.MACS2.Peaks/ATAC_190211_10_WT_LZ_peaks.narrowPeak
+            format: NarrowPeak
+      - rep: 5
+        files:
+          - path: /Volumes/GRAID/Collaborations/Tbet_KO_ATAC/data/ATAC_190211_12_T_bet_KO_DZ/ATAC_190211_12_T_bet_KO_DZ.MACS2.Peaks/ATAC_190211_12_T_bet_KO_DZ_peaks.narrowPeak
+            format: NarrowPeak
+      - rep: 6
+        files:
+          - path: /Volumes/GRAID/Collaborations/Tbet_KO_ATAC/data/ATAC_190211_12_T_bet_KO_LZ/ATAC_190211_12_T_bet_KO_LZ.MACS2.Peaks/ATAC_190211_12_T_bet_KO_LZ_peaks.narrowPeak
+            format: NarrowPeak
+      - rep: 7
+        files:
+          - path: /Volumes/GRAID/Collaborations/Tbet_KO_ATAC/data/ATAC_190211_12_WT_DZ/ATAC_190211_12_WT_DZ.MACS2.Peaks/ATAC_190211_12_WT_DZ_peaks.narrowPeak
+            format: NarrowPeak
+      - rep: 8
+        files:
+          - path: /Volumes/GRAID/Collaborations/Tbet_KO_ATAC/data/ATAC_190211_12_WT_LZ/ATAC_190211_12_WT_LZ.MACS2.Peaks/ATAC_190211_12_WT_LZ_peaks.narrowPeak
+            format: NarrowPeak
+      - rep: 9
+        files:
+          - path: /Volumes/GRAID/Collaborations/Tbet_KO_ATAC/data/ATAC_190211_15_T_bet_KO_DZ/ATAC_190211_15_T_bet_KO_DZ.MACS2.Peaks/ATAC_190211_15_T_bet_KO_DZ_peaks.narrowPeak
+            format: NarrowPeak
+
+  - id: WT_LZ_ATAC
+    group: WT_LZ
+    replicates:
+      - rep: 1
+        files:
+          - path: /Volumes/GRAID/Collaborations/Tbet_KO_ATAC/data/ATAC_190211_10_T_bet_KO_DZ/ATAC_190211_10_T_bet_KO_DZ.MACS2.Peaks/ATAC_190211_10_T_bet_KO_DZ_peaks.narrowPeak
+            format: NarrowPeak
+      - rep: 2
+        files:
+          - path: /Volumes/GRAID/Collaborations/Tbet_KO_ATAC/data/ATAC_190211_10_T_bet_KO_LZ/ATAC_190211_10_T_bet_KO_LZ.MACS2.Peaks/ATAC_190211_10_T_bet_KO_LZ_peaks.narrowPeak
+            format: NarrowPeak
+      - rep: 3
+        files:
+          - path: /Volumes/GRAID/Collaborations/Tbet_KO_ATAC/data/ATAC_190211_10_WT_DZ/ATAC_190211_10_WT_DZ.MACS2.Peaks/ATAC_190211_10_WT_DZ_peaks.narrowPeak
+            format: NarrowPeak
+      - rep: 4
+        files:
+          - path: /Volumes/GRAID/Collaborations/Tbet_KO_ATAC/data/ATAC_190211_10_WT_LZ/ATAC_190211_10_WT_LZ.MACS2.Peaks/ATAC_190211_10_WT_LZ_peaks.narrowPeak
+            format: NarrowPeak
+      - rep: 5
+        files:
+          - path: /Volumes/GRAID/Collaborations/Tbet_KO_ATAC/data/ATAC_190211_12_T_bet_KO_DZ/ATAC_190211_12_T_bet_KO_DZ.MACS2.Peaks/ATAC_190211_12_T_bet_KO_DZ_peaks.narrowPeak
+            format: NarrowPeak
+      - rep: 6
+        files:
+          - path: /Volumes/GRAID/Collaborations/Tbet_KO_ATAC/data/ATAC_190211_12_T_bet_KO_LZ/ATAC_190211_12_T_bet_KO_LZ.MACS2.Peaks/ATAC_190211_12_T_bet_KO_LZ_peaks.narrowPeak
+            format: NarrowPeak
+      - rep: 7
+        files:
+          - path: /Volumes/GRAID/Collaborations/Tbet_KO_ATAC/data/ATAC_190211_12_WT_DZ/ATAC_190211_12_WT_DZ.MACS2.Peaks/ATAC_190211_12_WT_DZ_peaks.narrowPeak
+            format: NarrowPeak
+      - rep: 8
+        files:
+          - path: /Volumes/GRAID/Collaborations/Tbet_KO_ATAC/data/ATAC_190211_12_WT_LZ/ATAC_190211_12_WT_LZ.MACS2.Peaks/ATAC_190211_12_WT_LZ_peaks.narrowPeak
+            format: NarrowPeak
+      - rep: 9
+        files:
+          - path: /Volumes/GRAID/Collaborations/Tbet_KO_ATAC/data/ATAC_190211_15_T_bet_KO_DZ/ATAC_190211_15_T_bet_KO_DZ.MACS2.Peaks/ATAC_190211_15_T_bet_KO_DZ_peaks.narrowPeak
+            format: NarrowPeak
+
+RNA-Seq:
+  - id: KO_DZ_RNA
+    group: KO_DZ
+    replicates:
+      - rep: 1
+        files:
+          - path: /Volumes/GRAID/Collaborations/Tbet_KO_ATAC/analysis/PageRank/rna/RNA_190211_10_T-bet_KO_DZ.rpkm.tsv
+            tags: ['GeneQuant']
+      - rep: 2
+        files:
+          - path: /Volumes/GRAID/Collaborations/Tbet_KO_ATAC/analysis/PageRank/rna/RNA_190211_12_T-bet_KO_DZ.rpkm.tsv
+            tags: ['GeneQuant']
+      - rep: 3
+        files:
+          - path: /Volumes/GRAID/Collaborations/Tbet_KO_ATAC/analysis/PageRank/rna/RNA_190211_15_T-bet_KO_DZ.rpkm.tsv
+            tags: ['GeneQuant']
+      - rep: 4
+        files:
+          - path: /Volumes/GRAID/Collaborations/Tbet_KO_ATAC/analysis/PageRank/rna/RNA_190212_10_T-bet_KO_DZ.rpkm.tsv
+            tags: ['GeneQuant']
+      - rep: 5
+        files:
+          - path: /Volumes/GRAID/Collaborations/Tbet_KO_ATAC/analysis/PageRank/rna/RNA_190212_12_T-bet_KO_DZ.rpkm.tsv
+            tags: ['GeneQuant']
+      - rep: 6
+        files:
+          - path: /Volumes/GRAID/Collaborations/Tbet_KO_ATAC/analysis/PageRank/rna/RNA_190212_15_T-bet_KO_DZ.rpkm.tsv
+            tags: ['GeneQuant']
+      - rep: 7
+        files:
+          - path: /Volumes/GRAID/Collaborations/Tbet_KO_ATAC/analysis/PageRank/rna/RNA_190213_10_T-bet_KO_DZ.rpkm.tsv
+            tags: ['GeneQuant']
+      - rep: 8
+        files:
+          - path: /Volumes/GRAID/Collaborations/Tbet_KO_ATAC/analysis/PageRank/rna/RNA_190213_12_T-bet_KO_DZ.rpkm.tsv
+            tags: ['GeneQuant']
+      - rep: 9
+        files:
+          - path: /Volumes/GRAID/Collaborations/Tbet_KO_ATAC/analysis/PageRank/rna/RNA_190213_15_T-bet_KO_DZ.rpkm.tsv
+            tags: ['GeneQuant']
+
+  - id: KO_LZ_RNA
+    group: KO_LZ
+    replicates:
+      - rep: 1
+        files:
+          - path: /Volumes/GRAID/Collaborations/Tbet_KO_ATAC/analysis/PageRank/rna/RNA_190211_10_T-bet_KO_LZ.rpkm.tsv
+            tags: ['GeneQuant']
+      - rep: 2
+        files:
+          - path: /Volumes/GRAID/Collaborations/Tbet_KO_ATAC/analysis/PageRank/rna/RNA_190211_12_T-bet_KO_LZ.rpkm.tsv
+            tags: ['GeneQuant']
+      - rep: 3
+        files:
+          - path: /Volumes/GRAID/Collaborations/Tbet_KO_ATAC/analysis/PageRank/rna/RNA_190211_15_T-bet_KO_LZ.rpkm.tsv
+            tags: ['GeneQuant']
+      - rep: 4
+        files:
+          - path: /Volumes/GRAID/Collaborations/Tbet_KO_ATAC/analysis/PageRank/rna/RNA_190212_10_T-bet_KO_LZ.rpkm.tsv
+            tags: ['GeneQuant']
+      - rep: 5
+        files:
+          - path: /Volumes/GRAID/Collaborations/Tbet_KO_ATAC/analysis/PageRank/rna/RNA_190212_12_T-bet_KO_LZ.rpkm.tsv
+            tags: ['GeneQuant']
+      - rep: 6
+        files:
+          - path: /Volumes/GRAID/Collaborations/Tbet_KO_ATAC/analysis/PageRank/rna/RNA_190212_15_T-bet_KO_LZ.rpkm.tsv
+            tags: ['GeneQuant']
+      - rep: 7
+        files:
+          - path: /Volumes/GRAID/Collaborations/Tbet_KO_ATAC/analysis/PageRank/rna/RNA_190213_10_T-bet_KO_LZ.rpkm.tsv
+            tags: ['GeneQuant']
+      - rep: 8
+        files:
+          - path: /Volumes/GRAID/Collaborations/Tbet_KO_ATAC/analysis/PageRank/rna/RNA_190213_12_T-bet_KO_LZ.rpkm.tsv
+            tags: ['GeneQuant']
+      - rep: 9
+        files:
+          - path: /Volumes/GRAID/Collaborations/Tbet_KO_ATAC/analysis/PageRank/rna/RNA_190213_15_T-bet_KO_LZ.rpkm.tsv
+            tags: ['GeneQuant']
+
+  - id: WT_DZ_RNA
+    group: WT_DZ
+    replicates:
+      - rep: 1
+        files:
+          - path: /Volumes/GRAID/Collaborations/Tbet_KO_ATAC/analysis/PageRank/rna/RNA_190211_10_WT_DZ.rpkm.tsv
+            tags: ['GeneQuant']
+      - rep: 2
+        files:
+          - path: /Volumes/GRAID/Collaborations/Tbet_KO_ATAC/analysis/PageRank/rna/RNA_190211_12_WT_DZ.rpkm.tsv
+            tags: ['GeneQuant']
+      - rep: 3
+        files:
+          - path: /Volumes/GRAID/Collaborations/Tbet_KO_ATAC/analysis/PageRank/rna/RNA_190211_15_WT_DZ.rpkm.tsv
+            tags: ['GeneQuant']
+      - rep: 4
+        files:
+          - path: /Volumes/GRAID/Collaborations/Tbet_KO_ATAC/analysis/PageRank/rna/RNA_190212_10_WT_DZ.rpkm.tsv
+            tags: ['GeneQuant']
+      - rep: 5
+        files:
+          - path: /Volumes/GRAID/Collaborations/Tbet_KO_ATAC/analysis/PageRank/rna/RNA_190212_12_WT_DZ.rpkm.tsv
+            tags: ['GeneQuant']
+      - rep: 6
+        files:
+          - path: /Volumes/GRAID/Collaborations/Tbet_KO_ATAC/analysis/PageRank/rna/RNA_190212_15_WT_DZ.rpkm.tsv
+            tags: ['GeneQuant']
+      - rep: 7
+        files:
+          - path: /Volumes/GRAID/Collaborations/Tbet_KO_ATAC/analysis/PageRank/rna/RNA_190213_10_WT_DZ.rpkm.tsv
+            tags: ['GeneQuant']
+      - rep: 8
+        files:
+          - path: /Volumes/GRAID/Collaborations/Tbet_KO_ATAC/analysis/PageRank/rna/RNA_190213_12_WT_DZ.rpkm.tsv
+            tags: ['GeneQuant']
+      - rep: 9
+        files:
+          - path: /Volumes/GRAID/Collaborations/Tbet_KO_ATAC/analysis/PageRank/rna/RNA_190213_15_WT_DZ.rpkm.tsv
+            tags: ['GeneQuant']
+
+  - id: WT_LZ_RNA
+    group: WT_LZ
+    replicates:
+      - rep: 1
+        files:
+          - path: /Volumes/GRAID/Collaborations/Tbet_KO_ATAC/analysis/PageRank/rna/RNA_190211_10_WT_LZ.rpkm.tsv
+            tags: ['GeneQuant']
+      - rep: 2
+        files:
+          - path: /Volumes/GRAID/Collaborations/Tbet_KO_ATAC/analysis/PageRank/rna/RNA_190211_12_WT_LZ.rpkm.tsv
+            tags: ['GeneQuant']
+      - rep: 3
+        files:
+          - path: /Volumes/GRAID/Collaborations/Tbet_KO_ATAC/analysis/PageRank/rna/RNA_190211_15_WT_LZ.rpkm.tsv
+            tags: ['GeneQuant']
+      - rep: 4
+        files:
+          - path: /Volumes/GRAID/Collaborations/Tbet_KO_ATAC/analysis/PageRank/rna/RNA_190212_10_WT_LZ.rpkm.tsv
+            tags: ['GeneQuant']
+      - rep: 5
+        files:
+          - path: /Volumes/GRAID/Collaborations/Tbet_KO_ATAC/analysis/PageRank/rna/RNA_190212_12_WT_LZ.rpkm.tsv
+            tags: ['GeneQuant']
+      - rep: 6
+        files:
+          - path: /Volumes/GRAID/Collaborations/Tbet_KO_ATAC/analysis/PageRank/rna/RNA_190212_15_WT_LZ.rpkm.tsv
+            tags: ['GeneQuant']
+      - rep: 7
+        files:
+          - path: /Volumes/GRAID/Collaborations/Tbet_KO_ATAC/analysis/PageRank/rna/RNA_190213_10_WT_LZ.rpkm.tsv
+            tags: ['GeneQuant']
+      - rep: 8
+        files:
+          - path: /Volumes/GRAID/Collaborations/Tbet_KO_ATAC/analysis/PageRank/rna/RNA_190213_12_WT_LZ.rpkm.tsv
+            tags: ['GeneQuant']
+      - rep: 9
+        files:
+          - path: /Volumes/GRAID/Collaborations/Tbet_KO_ATAC/analysis/PageRank/rna/RNA_190213_15_WT_LZ.rpkm.tsv
+            tags: ['GeneQuant']
+
+#  - id: liver_RNA
+#    group: liver
+#    pairedEnd: true
+#    replicates:
+#      - rep:  1
+#        files:
+#          # pair-ended samples
+#          - pair:
+#            - path: RNA-Seq/liver-filename-replicate1-forward.fastq.gz
+#            - path: RNA-Seq/liver-filename-replicate1-reverse.fastq.gz
+
+#HiC:
+#  - id: liver_HiC
+#    group: liver
+#    replicates:
+#      - rep:  1
+#        files:
+          # Currently the pipeline do not analyze HiC data, so the user need to
+          # provide the end result - a list of loops, in following format:
+          # chrom_1 <TAB> start_1 <TAB> end_1 <TAB> chrom_2 <TAB> start_2 <TAB> end_2
+          # An example:
+          # chr21 <TAB> 29343 <TAB> 500000 <TAB> chr21 <TAB> 1009340 <TAB> 1023400
+#          - path: HiC/liver-loops.txt
+#            tags: ["loops"]
+
+# ChIP-seq will not be analyzed in beta release
+#ChIP-Seq: []

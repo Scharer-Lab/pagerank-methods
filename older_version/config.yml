@@ -1,18 +1,10 @@
-######Steps to consider before running this#####
-
-# create data directory and put '_input.yml' file in it (e.g. 'lrrk2_input.yml' down below)
-# download organism specific annotation from gencode
-# in the genome sequence index give the file name delibrately (e.g.'mm9_ERCC.index' down below)
-
-
-
 ################################################################################
 # NOTE: Lines starting with a '#' character are comments, for human reading only.
 ################################################################################
 
 # The path to a file specifying the input data sets. The software come with
 # an example file named "input.yaml".
-input: "data/lrrk2_input.yml"
+input: "input.yml"
 
 # Directory containing the results.
 outputDir: "output/"
@@ -32,7 +24,7 @@ picard: "/Volumes/GRAID/seqTools/picard_2.9.4/picard.jar"
 # *Important*: Remember to ungzip the file using "gzip -d hg38.fa.gz"!
 # Tip: To make a single genome file from multiple fastq files, execute:
 # `cat chr1.fa chr2.fa chr3.fa > genome.fa`
-genome: "/Volumes/GRAID/seqTools/bowtie/bowtie2.indices/mm9_ERCC/mm9_ERCC.fa"
+genome: "/Volumes/GRAID/seqTools/genomes/mm10/mm10.fa"
 
 # Genome annotation in *GTF* format. For human and mouse, Gencode annotations
 # are available at http://www.gencodegenes.org/.
@@ -42,11 +34,11 @@ genome: "/Volumes/GRAID/seqTools/bowtie/bowtie2.indices/mm9_ERCC/mm9_ERCC.fa"
 # FASTA files. However, since UCSC uses chr1, chr2,... naming convention,
 # and ENSEMBL uses 1, 2, ... naming, the ENSEMBL and UCSC FASTA and GTF files
 # cannot be mixed together.
-annotation: "/Volumes/GRAID/seqTools/genomes/mm9/gencode.vM9.annotation.gtf"
+annotation: "/Volumes/GRAID/seqTools/genomes/mm10/gencode.vM17.annotation.gtf"
 
 # MEME format file containing motifs. Human and mouse motif files can be found
 # here: https://github.com/kaizhang/Taiji/tree/master/docs/data/motifs
-motifFile: "/Volumes/GRAID/seqTools/Taiji-0.2.0/docs/data/motifs/cisBP_mouse.meme"
+motifFile: "/Volumes/GRAID/Madeline_ATAC/analysis/PageRank/cisBP_mouse.meme"
 
 
 ################################################################################
@@ -60,10 +52,10 @@ motifFile: "/Volumes/GRAID/seqTools/Taiji-0.2.0/docs/data/motifs/cisBP_mouse.mem
 ################################################################################
 
 # This is the *FILE* containing GENOME SEQUENCE INDEX.
-seqIndex: "/Volumes/GRAID/seqTools/bowtie/bowtie2.indices/mm9_ERCC/taiji/mm9_ERCC.index"
+seqIndex: "/Volumes/GRAID/seqTools/genomes/mm10/mm10.index"
 
 # This is the *DIRECTORY* containing BWA INDICES.
-bwaIndex: "/Volumes/GRAID/seqTools/bwa-0.7.12/bwa.indices/taiji_mm9_ERCC/"
+bwaIndex: "/Volumes/GRAID/seqTools/genomes/mm10/mm10_BWAIndex/"
 
 # Uncomment following sections if you want to analyze raw RNA-seq fastq files.
 # NOTE: STAR aligner uses a lot memory.
