@@ -8,6 +8,8 @@ taiji run --config config.yml
 taiji_new run --config config.yml
 ```
 
+On ESB, only 1 version is installed (version 1.2.1.3) invoked using `taiji`.
+
 ### taiji (version 0.2.0)
 * Uses bam files for ATAC and rpkm tables for RNA as input
 * Example config and input files in older_version folder
