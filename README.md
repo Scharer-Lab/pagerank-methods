@@ -2,25 +2,33 @@
 
 Two versions of Taiji pipeline are installed on both GRAID and GRAID2 server. Their command line names are taiji and taiji_new respectively.  
 
+On ESB, only 1 version is installed (version 1.2.1.3).
+
 The command to run Taiji is:
 ```
-taiji run --config config.yml
-taiji_new run --config config.yml
+taiji run --config config.yml     # ESB and GRAID
+taiji_new run --config config.yml # Just GRAID
 ```
-
-On ESB, only 1 version is installed (version 1.2.1.3) invoked using `taiji`.
 
 ### taiji (version 0.2.0)
 * Uses bam files for ATAC and rpkm tables for RNA as input
-* Example config and input files in older_version folder
-* cisBP motif database files in older_version folder
+* Example config and input files in taiji-0.2.0-formatting folder
+* cisBP motif database files in taiji-0.2.0-formatting folder
 * Script to create input.yml file from ESB manifest table
 
 ### taiji_new (version 1.0.1)
 * Uses narrowPeaks files for ATAC and rpkm tables for RNA as input
-* Example config and input files in current_version folder
-* cisBP motif database files in current_version folder
-* Script to create input.yml file from ESB manifest table
+* Example config and input files in taiji-1.0.1-formatting folder
+* cisBP motif database files in taiji-1.0.1-formatting folder
+* Script to create input.yml file from old ESB manifest table
+
+### taiji (version 1.2.1.3)
+* Uses narrowPeaks files for ATAC and rpkm tables for RNA as input
+* Example config in taiji-1.2.1.3-formatting folder
+* cisBP motif database files in taiji-1.2.1.3-formatting folder
+* Script to create input.yml file from manifest file
+* `-n` option for parallel processing is broken, do not use
 
 ### Reference
 * Zhang, K., Wang, M., Zhao, Y., & Wang, W. (2019). Taiji: System-level identification of key transcription factors reveals transcriptional waves in mouse embryonic development. Science advances, 5(3), eaav3262.
+
