@@ -11,8 +11,8 @@ RNAmanifest = read.table(paste0(RNAProjectDir, RNAmanFile), header=T)
 RNAmanifest = RNAmanifest[RNAmanifest$include, ]
 
 experimentName = "" # Replace, input filename
-expressionFile = paste0(RNAProjectDir, "coverage/", experimentName, ".geneRpkm.detected.RPM.3.exon.csv")
-expression = read.table(expressionFile, header = T, sep = ",", as.is = T)
+expressionFile = paste0(RNAProjectDir, "coverage/", experimentName, ".geneRpkm.detected.RPM.3.exon.txt")
+expression = read.table(expressionFile, header = T, sep = "\t", as.is = T)
 
 if (!all(RNAmanifest$group %in% ATACmanifest$group)) { # TODO: Does the order need to match?
   print("Group names need to match to run Taiji PageRank. Exiting.")
