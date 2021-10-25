@@ -4,18 +4,20 @@ Two versions of Taiji pipeline are installed on both GRAID and GRAID2 server. Th
 
 On ESB, only 1 version is installed (version 1.2.1.3).
 
-To run PageRank using Taiji, you must use the scripts in this bitbucket to create the input files.
+To run PageRank using Taiji, you must use the scripts in this bitbucket to create the input file, `input.yml`.
 
-* Copy `config.yml` and `format_taiji.R` to your projects directory
-* Edit the necessary fields in `config.yml`--output_dir, genome, annotation, motif_file and bwa_index. The options are listed above the field in a comment
-* Edit the necessary fields for `format_taiji.R`. Necessary fields are marked with a `# Replace` comment and are not commented out.
-* Run `format_taiji.R`. This will make the necessary `input.yml` file. Note that group names in RNAseq and ATACseq must match exactly for this to work.
-* Check the log file and make sure that there were no issues creating `input.yml`.
+* Copy `config.yml` and `format_taiji.R` to your project's directory
+* Edit the necessary fields in `config.yml`: output_dir, genome, annotation, motif_file and bwa_index. The options are listed above the field in a comment if necessary.
+* Edit the necessary fields for `format_taiji.R`. Necessary fields are marked with a `# Replace` comment.
+* Run `Rscript format_taiji.R`. This will make the necessary `input.yml` file. Note that group names in RNAseq and ATACseq must match exactly for this to work.
+* Check the log file if it exists and make sure that there were no issues creating `input.yml`.
 * Then, run Taiji. The command to run Taiji is one of these commands:
 ```
 taiji run --config config.yml     # ESB and GRAID
 taiji_new run --config config.yml # Just GRAID
 ```
+* The pagerank output is in `\`output_dir\`/GeneRanks.tsv`.Note that results for each group are duplicated for each sample and should be removed.
+* For analysis, any value below 10^-5 can be omitted.
 
 ### taiji (version 0.2.0)
 * Uses bam files for ATAC and rpkm tables for RNA as input
