@@ -2,7 +2,7 @@
 
 ATACProjectDir = "/PROJECT/DIR/" # Replace, must end with '/'
 ATACmanFile = "pipeline/ATACseq.sample.manifest.txt" # Replace, if necessary
-ATACmanifest = read.table(paste0(ATACseqProjectDir, ATACManFile), header=T)
+ATACmanifest = read.table(paste0(ATACProjectDir, ATACmanFile), header=T)
 ATACmanifest = ATACmanifest[ATACmanifest$include, ]
 
 RNAProjectDir = "/PROJECT/DIR/" # Replace, must end with '/'
