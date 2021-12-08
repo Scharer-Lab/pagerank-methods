@@ -16,6 +16,7 @@ To run PageRank using Taiji, you must use the scripts in this bitbucket to creat
 taiji run --config config.yml     # ESB and GRAID
 taiji_new run --config config.yml # Just GRAID
 ```
+* Appending `&> taiji.log` to the run command is recommended to capture any output by taiji.
 * The pagerank output is in `output_dir/GeneRanks.tsv`. Note that results for each group are duplicated for each sample and should be removed.
 * For analysis, any value below 10^-5 can be omitted.
 

@@ -6,13 +6,13 @@ ATACmanifest = read.table(paste0(ATACProjectDir, ATACmanFile), header=T)
 ATACmanifest = ATACmanifest[ATACmanifest$include, ]
 
 RNAProjectDir = "/PROJECT/DIR/" # Replace, must end with '/'
-RNAmanFile = "pipeline/ATACseq.sample.manifest.txt" # Replace, if necessary
+RNAmanFile = "pipeline/RNAseq.sample.manifest.txt" # Replace, if necessary
 RNAmanifest = read.table(paste0(RNAProjectDir, RNAmanFile), header=T)
 RNAmanifest = RNAmanifest[RNAmanifest$include, ]
 
 experimentName = "" # Replace, input filename
 expressionFile = paste0(RNAProjectDir, "coverage/", experimentName, ".geneRpkm.detected.RPM.3.exon.txt")
-expression = read.table(expressionFile, header = T, sep = "\t", as.is = T)
+expression = read.table(expressionFile, header = T, sep = "\t", as.is = T) # Note: Older projects may use csv instead of tsv
 
 if (!all(RNAmanifest$group %in% ATACmanifest$group)) { # TODO: Does the order need to match?
   print("Group names need to match to run Taiji PageRank. Exiting.")
