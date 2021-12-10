@@ -30,7 +30,7 @@ for(group in unique(ATACmanifest$group)) { # TODO: paste(rep(" ", 3), collapse =
   write(paste0("    group: ",group), outfile, append=T)
   write(       "    replicates:", outfile, append=T)
 
-  samples = which(ATACmanifest$comp==group)
+  samples = which(ATACmanifest$group==group)  #REPLACE if necessary
   for(i in 1:length(samples)) {
     peakName = ATACmanifest$PeakFile[samples[i]]
     write(paste0("      - rep: ",i), outfile, append=T)
@@ -43,7 +43,7 @@ for(group in unique(ATACmanifest$group)) { # TODO: paste(rep(" ", 3), collapse =
 
 ### Matched RNAseq samples
 
-write("RNA-Seq:", outfile)
+write("RNA-Seq:", outfile, append=TRUE)
 
 for(group in unique(RNAmanifest$group)){
   write(paste0("  - id: ", group, "_RNA"), outfile, append=T)
