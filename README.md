@@ -17,6 +17,7 @@ taiji run --config config.yml     # ESB and GRAID
 taiji_new run --config config.yml # Just GRAID
 ```
 * Appending `&> taiji.log` to the run command is recommended to capture any output by taiji.
+* Note that `format_taiji.R` requires the narrowPeak file for each sample that the current pipeline produces in the mapping step.
 * The pagerank output is in `output_dir/GeneRanks.tsv`. Note that results for each group are duplicated for each sample and should be removed.
 * For analysis, any value below 10^-5 can be omitted.
 

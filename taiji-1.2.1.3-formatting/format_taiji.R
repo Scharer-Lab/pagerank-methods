@@ -57,12 +57,12 @@ for(group in unique(RNAmanifest$group)){
 
     # Make the needed tsv files for 'GeneQuant'
     sampleExpressionName = paste0(RNAmanifest$dir[samples[i]], RNAmanifest$sample[samples[i]], ".rpkm.tsv")
-    if (!file.exists(sampleExpressionName)) {
-      # Ensure include column hasn't increased since RNAseq.coverage.R for this line
-      sampleExpression = expression[, c("ENTREZID", paste0(RNAmanifest$sample[samples[i]], ".rpkm"))]
-      write.table(file = sampleExpressionName, x = sampleExpression, 
-                  col.names = F, row.names = F, quote = F, sep = '\t')
-    }
+
+    # Ensure include column hasn't increased since RNAseq.coverage.R for this line
+    sampleExpression = expression[, c("ENTREZID", paste0(RNAmanifest$sample[samples[i]], ".rpkm"))]
+    write.table(file = sampleExpressionName, x = sampleExpression,
+                col.names = F, row.names = F, quote = F, sep = '\t')
+
 
     write(paste0("          - path: ", sampleExpressionName), outfile, append=T)
     write(       "            tags: ['GeneQuant']", outfile, append=T)
